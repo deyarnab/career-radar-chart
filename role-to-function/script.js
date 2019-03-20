@@ -2,7 +2,7 @@ var w = window.innerWidth - 300, h = window.innerWidth - 300;
 
 var colorscale = d3.scale.category10();
 
-var LegendOptions = ['Principal Developer', 'Architect', 'Development Lead', 'Development Manager'];
+var LegendOptions = ['Principal Developer', 'Architect', 'Development Lead', 'Development Manager', 'Head Of Delivery'];
 
 var d = [
 		  [
@@ -42,6 +42,16 @@ var d = [
         {axis: "Organisation Thinking", value: 0.3},
         {axis: "Systems Thinking", value: 0.05},
         {axis: "Implementation Thinking", value: 0.05},
+        {axis: "Experimenting with Technology", value: 0.0},
+        {axis: "Developing Supporting Software", value: 0.0},
+        {axis: "Developing Software", value: 0.0}
+      ],[
+        {axis: "Stakeholder Management", value: 0.3},
+        {axis: "Driving Morale", value: 0.1},
+        {axis: "Supporting Crew", value: 0.0},
+        {axis: "Organisation Thinking", value: 0.3},
+        {axis: "Systems Thinking", value: 0.3},
+        {axis: "Implementation Thinking", value: 0.0},
         {axis: "Experimenting with Technology", value: 0.0},
         {axis: "Developing Supporting Software", value: 0.0},
         {axis: "Developing Software", value: 0.0}
