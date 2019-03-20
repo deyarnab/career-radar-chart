@@ -2,40 +2,50 @@ var w = window.innerWidth - 300, h = window.innerWidth - 300;
 
 var colorscale = d3.scale.category10();
 
-var LegendOptions = ['Principal Developer', 'Architect', 'Development Lead'];
+var LegendOptions = ['Principal Developer', 'Architect', 'Development Lead', 'Development Manager'];
 
 var d = [
 		  [
-			{axis: "Stakeholder Management", value: 0.05},
-			{axis: "Driving Morale", value: 0.1},
-			{axis: "Supporting Crew", value: 0.15},
-			{axis: "Organisation Thinking", value: 0.05},
-			{axis: "Systems Thinking", value: 0.1},
-			{axis: "Implementation Thinking", value: 0.2},
-			{axis: "Experimenting with Technology", value: 0.15},
-			{axis: "Developing Supporting Software", value: 0.15},
-			{axis: "Developing Software", value: 0.05}
+        {axis: "Stakeholder Management", value: 0.05},
+        {axis: "Driving Morale", value: 0.1},
+        {axis: "Supporting Crew", value: 0.15},
+        {axis: "Organisation Thinking", value: 0.05},
+        {axis: "Systems Thinking", value: 0.1},
+        {axis: "Implementation Thinking", value: 0.2},
+        {axis: "Experimenting with Technology", value: 0.15},
+        {axis: "Developing Supporting Software", value: 0.15},
+        {axis: "Developing Software", value: 0.05}
 		  ],[
-			{axis: "Stakeholder Management", value: 0.2},
-			{axis: "Driving Morale", value: 0.05},
-			{axis: "Supporting Crew", value: 0.05},
-			{axis: "Organisation Thinking", value: 0.1},
-			{axis: "Systems Thinking", value: 0.4},
-			{axis: "Implementation Thinking", value: 0.1},
-			{axis: "Experimenting with Technology", value: 0.1},
-			{axis: "Developing Software", value: 0.0},
-			{axis: "Developing Supporting Software", value: 0.0}
+        {axis: "Stakeholder Management", value: 0.2},
+        {axis: "Driving Morale", value: 0.05},
+        {axis: "Supporting Crew", value: 0.05},
+        {axis: "Organisation Thinking", value: 0.1},
+        {axis: "Systems Thinking", value: 0.4},
+        {axis: "Implementation Thinking", value: 0.1},
+        {axis: "Experimenting with Technology", value: 0.1},
+        {axis: "Developing Software", value: 0.0},
+        {axis: "Developing Supporting Software", value: 0.0}
 		  ],[
-			{axis: "Stakeholder Management", value: 0.15},
-			{axis: "Driving Morale", value: 0.25},
-		  {axis: "Supporting Crew", value: 0.4},
-			{axis: "Organisation Thinking", value: 0.15},
-			{axis: "Systems Thinking", value: 0.025},
-			{axis: "Implementation Thinking", value: 0.025},
-			{axis: "Experimenting with Technology", value: 0.0},
-			{axis: "Developing Supporting Software", value: 0.0},
-			{axis: "Developing Software", value: 0.0}
-		  ]
+        {axis: "Stakeholder Management", value: 0.15},
+        {axis: "Driving Morale", value: 0.25},
+        {axis: "Supporting Crew", value: 0.4},
+        {axis: "Organisation Thinking", value: 0.15},
+        {axis: "Systems Thinking", value: 0.025},
+        {axis: "Implementation Thinking", value: 0.025},
+        {axis: "Experimenting with Technology", value: 0.0},
+        {axis: "Developing Supporting Software", value: 0.0},
+        {axis: "Developing Software", value: 0.0}
+      ],[
+        {axis: "Stakeholder Management", value: 0.1},
+        {axis: "Driving Morale", value: 0.3},
+        {axis: "Supporting Crew", value: 0.2},
+        {axis: "Organisation Thinking", value: 0.3},
+        {axis: "Systems Thinking", value: 0.05},
+        {axis: "Implementation Thinking", value: 0.05},
+        {axis: "Experimenting with Technology", value: 0.0},
+        {axis: "Developing Supporting Software", value: 0.0},
+        {axis: "Developing Software", value: 0.0}
+      ]
 		];
 
 var mycfg = {
