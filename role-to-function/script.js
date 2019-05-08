@@ -2,60 +2,46 @@ var w = window.innerWidth - 300, h = window.innerWidth - 300;
 
 var colorscale = d3.scale.category10();
 
-var LegendOptions = ['Principal Developer', 'Architect', 'Development Lead', 'Development Manager', 'Head Of Delivery'];
+var LegendOptions = ['Senior Quality Analyst', 'Business Analyst', 'Developer', 'Product Manager'];
 
 var d = [
 		  [
-        {axis: "Stakeholder Management", value: 0.05},
-        {axis: "Driving Morale", value: 0.1},
-        {axis: "Supporting Crew", value: 0.15},
-        {axis: "Organisation Thinking", value: 0.05},
-        {axis: "Systems Thinking", value: 0.1},
-        {axis: "Implementation Thinking", value: 0.2},
-        {axis: "Experimenting with Technology", value: 0.15},
-        {axis: "Developing Supporting Software", value: 0.15},
-        {axis: "Developing Software", value: 0.05}
+        {axis: "Code Sanity Checks", value: 0.2},
+        {axis: "Pairing", value: 0.2},
+        {axis: "Manual Testing", value: 0.3},
+        {axis: "Test Automation", value: 0.0},
+        {axis: "Performance Testing", value: 0.0},
+        {axis: "Analysis", value: 0.2},
+        {axis: "Meetings", value: 0.2},
+        {axis: "Stakeholder Management", value: 0.0}
 		  ],[
-        {axis: "Stakeholder Management", value: 0.2},
-        {axis: "Driving Morale", value: 0.05},
-        {axis: "Supporting Crew", value: 0.05},
-        {axis: "Organisation Thinking", value: 0.1},
-        {axis: "Systems Thinking", value: 0.4},
-        {axis: "Implementation Thinking", value: 0.1},
-        {axis: "Experimenting with Technology", value: 0.1},
-        {axis: "Developing Software", value: 0.0},
-        {axis: "Developing Supporting Software", value: 0.0}
+        {axis: "Code Sanity Checks", value: 0.0},
+        {axis: "Pairing", value: 0.0},
+        {axis: "Manual Testing", value: 0.0},
+        {axis: "Test Automation", value: 0.0},
+        {axis: "Performance Testing", value: 0.0},
+        {axis: "Analysis", value: 0.5},
+        {axis: "Meetings", value: 0.2},
+        {axis: "Stakeholder Management", value: 0.3}
 		  ],[
-        {axis: "Stakeholder Management", value: 0.15},
-        {axis: "Driving Morale", value: 0.25},
-        {axis: "Supporting Crew", value: 0.4},
-        {axis: "Organisation Thinking", value: 0.15},
-        {axis: "Systems Thinking", value: 0.025},
-        {axis: "Implementation Thinking", value: 0.025},
-        {axis: "Experimenting with Technology", value: 0.0},
-        {axis: "Developing Supporting Software", value: 0.0},
-        {axis: "Developing Software", value: 0.0}
-      ],[
-        {axis: "Stakeholder Management", value: 0.1},
-        {axis: "Driving Morale", value: 0.3},
-        {axis: "Supporting Crew", value: 0.2},
-        {axis: "Organisation Thinking", value: 0.3},
-        {axis: "Systems Thinking", value: 0.05},
-        {axis: "Implementation Thinking", value: 0.05},
-        {axis: "Experimenting with Technology", value: 0.0},
-        {axis: "Developing Supporting Software", value: 0.0},
-        {axis: "Developing Software", value: 0.0}
-      ],[
-        {axis: "Stakeholder Management", value: 0.3},
-        {axis: "Driving Morale", value: 0.1},
-        {axis: "Supporting Crew", value: 0.0},
-        {axis: "Organisation Thinking", value: 0.3},
-        {axis: "Systems Thinking", value: 0.3},
-        {axis: "Implementation Thinking", value: 0.0},
-        {axis: "Experimenting with Technology", value: 0.0},
-        {axis: "Developing Supporting Software", value: 0.0},
-        {axis: "Developing Software", value: 0.0}
-      ]
+        {axis: "Code Sanity Checks", value: 0.2},
+        {axis: "Pairing", value: 0.3},
+        {axis: "Manual Testing", value: 0.1},
+        {axis: "Test Automation", value: 0.0},
+        {axis: "Performance Testing", value: 0.0},
+        {axis: "Analysis", value: 0.3},
+        {axis: "Meetings", value: 0.1},
+        {axis: "Stakeholder Management", value: 0.0}
+          ],[
+        {axis: "Code Sanity Checks", value: 0.0},
+        {axis: "Pairing", value: 0.0},
+        {axis: "Manual Testing", value: 0.1},
+        {axis: "Test Automation", value: 0.0},
+        {axis: "Performance Testing", value: 0.0},
+        {axis: "Analysis", value: 0.2},
+        {axis: "Meetings", value: 0.3},
+        {axis: "Stakeholder Management", value: 0.4}
+          ]
 		];
 
 var mycfg = {
