@@ -2,19 +2,18 @@ var w = window.innerWidth - 300, h = window.innerWidth - 300;
 
 var colorscale = d3.scale.category10();
 
-var LegendOptions = ['Sean Van Osselaer'];
+var LegendOptions = ['Arnab Dey'];
 
 var d = [
 		  [
-			{axis: "Stakeholder Management", value: 0.05},
-			{axis: "Driving Morale", value: 0.2},
-			{axis: "Supporting Crew", value: 0.1},
-			{axis: "Organisation Thinking", value: 0.15},
-			{axis: "Systems Thinking", value: 0.2},
-			{axis: "Implementation Thinking", value: 0.1},
-			{axis: "Experimenting with Technology", value: 0.15},
-			{axis: "Developing Supporting Software", value: 0.05},
-			{axis: "Developing Software", value: 0.0}
+              {axis: "Code Sanity Checks", value: 0.0},
+              {axis: "Pairing", value: 0.1},
+              {axis: "Manual Testing", value: 0.05},
+              {axis: "Test Automation", value: 0.2},
+              {axis: "Performance Testing", value: 0.2},
+              {axis: "Analysis", value: 0.25},
+              {axis: "Meetings", value: 0.1},
+              {axis: "Stakeholder Management", value: 0.1}
 		  ]
 		];
 

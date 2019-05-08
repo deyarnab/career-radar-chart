@@ -2,7 +2,7 @@ var w = window.innerWidth - 300, h = window.innerWidth - 300;
 
 var colorscale = d3.scale.category10();
 
-var LegendOptions = ['Senior Quality Analyst', 'Business Analyst', 'Developer', 'Product Manager'];
+var LegendOptions = ['Senior Quality Analyst', 'Principal Quality Analyst', 'Business Analyst', 'Developer', 'Product Manager'];
 
 var d = [
 		  [
@@ -14,6 +14,15 @@ var d = [
         {axis: "Analysis", value: 0.2},
         {axis: "Meetings", value: 0.2},
         {axis: "Stakeholder Management", value: 0.0}
+		  ],[
+        {axis: "Code Sanity Checks", value: 0.0},
+        {axis: "Pairing", value: 0.05},
+        {axis: "Manual Testing", value: 0.00},
+        {axis: "Test Automation", value: 0.2},
+        {axis: "Performance Testing", value: 0.2},
+        {axis: "Analysis", value: 0.15},
+        {axis: "Meetings", value: 0.2},
+        {axis: "Stakeholder Management", value: 0.2}
 		  ],[
         {axis: "Code Sanity Checks", value: 0.0},
         {axis: "Pairing", value: 0.0},
